@@ -1,0 +1,12 @@
+@use 'variables' as *;
+@use "sass:math";
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@function rem($px-value, $base: 16) {
+  @return math.div($px-value, $base) * 1rem;
+}

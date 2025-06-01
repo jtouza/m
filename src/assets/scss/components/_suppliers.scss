@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.supplier-contact {
+
+  & > * + * {
+    margin-top: rem(24);
+  }
+
+  &__title {
+    font-size: rem(18);
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #48545C;
+  }
+
+  &__name {
+    font-size: rem(14);
+    font-weight: 500;
+  }
+
+  &__tagline {
+    color: var(--color-muted);
+    font-size: rem(12)
+  }
+
+  &__logo{
+    border-radius: rem(4);
+  }
+}

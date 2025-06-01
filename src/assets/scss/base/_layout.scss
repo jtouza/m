@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+
+
+.wrap{
+  max-width: 100%;
+  margin:  0;
+  padding: 1.5rem;
+
+  @include desktop {
+    max-width: 83rem;
+    margin: 5rem auto;
+  }
+}
+
+.layout-two-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: center;
+
+    .content{
+      background-color: var(--color-white);
+      border-radius: var(--border-radius-md);
+      padding: 2em;
+      box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, .05);
+    }
+  }
+
+  &__main {
+    max-width: 100%;
+
+    @include desktop {
+      flex: 1 1 auto;
+      max-width: 750px;
+    }
+  }
+
+  &__aside {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    header {
+      margin-bottom: -1rem;
+    }
+
+    @include desktop {
+      flex: 0 0 362px;
+      max-width: 362px;
+    }
+  }
+}

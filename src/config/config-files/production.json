@@ -1,0 +1,20 @@
+{
+  "global": {
+    "version": 0.1
+  },
+  "http": {
+    "timeout": 10000,
+    "headers" : {
+
+    }
+  },
+  "localization": {
+    "locales": [
+      "es_ES"
+    ],
+    "localStorageCache": {
+      "enabled": true,
+      "expirationInMinutes": 60
+    }
+  }
+}

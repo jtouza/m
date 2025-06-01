@@ -1,0 +1,107 @@
+@use '../abstracts' as *;
+
+/** float **/
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/** Flex **/
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+.items-baseline{
+  align-items: baseline;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: rem(4);
+}
+
+.gap-1\.5 {
+  gap: rem(8);
+}
+
+.gap-2 {
+  gap: rem(16);
+}
+
+.gap-4 {
+  gap: rem(32);
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: rem(4);
+}
+
+.mb-2 {
+  margin-bottom: rem(16);
+}
+
+
+.space-y-1 {
+  > * + * {
+    margin-top: rem(4);
+  }
+}
+
+.space-y-2 {
+  > * + * {
+    margin-top: rem(16);
+  }
+}
+
+.space-y-4 {
+  > * + * {
+    margin-top: rem(32);
+  }
+}
+

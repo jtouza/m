@@ -1,0 +1,57 @@
+@use 'abstracts' as *;
+@use 'base' as *;
+@use 'components' as *;
+
+:root {
+  --color-orange: #{$orange};
+  --color-teal: #{$teal};
+  --color-red: #{$red};
+  --color-green: #{$green};
+
+  --color-white: #fff;
+  --color-light: #F2F2F2;
+  --color-muted : #727D85;
+  --color-gray: #5E5E5E;
+  --color-gray-dark: #383B41;
+  --color-dark: #212529;
+  --color-black: #00000;
+
+  --color-bg: #F7F7F7;
+
+  --border-color: #EEEEEE;
+  --border-radius: 0.3125rem;
+  --border-radius-md: 1.25rem;
+
+  --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+  --color-primary: var(--color-teal);
+  --color-secondary: var(--color-orange);
+  --color-danger: var(--color-red);
+  --color-success: var(--color-green);
+}
+
+
+body {
+
+  font: 1rem/1.5 var(--font-sans-serif);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include desktop {
+    background-color: var(--color-bg);
+  }
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.5rem;
+}
+
+

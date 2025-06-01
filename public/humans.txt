@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Jordi Touza Bonnin
+Location: Vidreres, Girona, Spain
+
+/* SITE */
+Standards: HTML5, CSS3, ESNext, Vue 3, TypeScript
+Components: Vite, Pinia, Zod, SASS
+Last update: 2025-06-01
+
+/* NOTE */
+This project was built with care, attention to detail, and love for clean code.
